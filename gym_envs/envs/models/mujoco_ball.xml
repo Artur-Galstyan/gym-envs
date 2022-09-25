@@ -1,0 +1,19 @@
+<mujoco>
+    <visual>
+        <map force="0.1" zfar="30"/>
+        <rgba haze="0.15 0.25 0.35 1"/>
+        <global offwidth="2560" offheight="1440" elevation="-20" azimuth="120"/>
+    </visual>
+    <asset>
+        <texture type="skybox" builtin="gradient" rgb1=".3 .5 .7" rgb2="0 0 0" width="32" height="512"/>
+    </asset>
+    <worldbody>
+        <body>
+            <geom type="plane" size="5 5 5" rgba="1 1 1 1"/>
+        </body>
+        <body>
+            <freejoint/>
+            <geom type="sphere" pos="0 0 5" size="0.25" rgba="0.5 1 0.5 1"/>
+        </body>
+    </worldbody>
+</mujoco>

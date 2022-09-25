@@ -1,10 +1,11 @@
-from gym_envs.envs.rocket_landing import RocketLandingEnv
+from gym_envs.envs.mujoco_ball import MujocoBallEnv
 
 
 def main():
-    env = RocketLandingEnv()
-    for i in range(1000):
-        env.physics_step(1.0 / 60)
+    env = MujocoBallEnv()
+
+    for _ in range(10000):
+        env.step()
         env.render()
 
 
